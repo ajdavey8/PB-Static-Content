@@ -11,10 +11,14 @@ I took a test driven approach to this challenge. I broke it down into 3 stages, 
 ## Setup
 
 #### To run the app on localhost:3000
+```sh
 - $ git clone https://github.com/ajdavey8/PB-Static-Content.git
 - $ cd PB-Static-Content
 - $ npm install
 - $ npm start
+```
 
 #### To run tests:
+```sh
 - $ npm test
+```
