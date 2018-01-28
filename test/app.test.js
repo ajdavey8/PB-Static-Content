@@ -1,5 +1,4 @@
 const supertest = require('supertest');
-const should = require('chai').should();
 const expect = require('chai').expect;
 const app = require('../index.js')
 
@@ -8,5 +7,11 @@ describe('App', function() {
     supertest(app)
     .get('/jobs')
     .expect(200, done);
+  });
+
+  it('should return a status code of 404', function(done) {
+  supertest(app)
+  .get('/randomurl')
+  .expect(404, done);
   });
 });
